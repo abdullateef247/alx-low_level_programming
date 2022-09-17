@@ -12,5 +12,6 @@
 	void print_diagonal(int n);
 	void print_square(int n);
 	int main(void);
+	void print_triangle(int size);
 
 #endif
