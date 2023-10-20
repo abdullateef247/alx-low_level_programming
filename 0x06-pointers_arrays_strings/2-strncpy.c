@@ -2,8 +2,9 @@
  * _strncpy - copy sting from source to destination
  * @dest: copy destination
  * @src: copy source
+ * @n: number of bytes to copy
  *
- * return: characters
+ * Return: characters
  */
 
 char *_strncpy(char *dest, char *src, int n)
