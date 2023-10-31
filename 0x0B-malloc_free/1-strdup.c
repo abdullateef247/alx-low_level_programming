@@ -19,13 +19,13 @@ char *_strdup(char *str)
 	}
 
 	n = strlen(str); /* counter in loop */
-	ptr_s = malloc(n * sizeof(char));
+	ptr_s = malloc((n - 1) * sizeof(char));
 
 	if (ptr_s == NULL)
 	{
 		return (NULL); /* Error allocating memory*/
 	}
-	for (i = 0; i < n; i++)
+	for (i = 0; i <= n; i++)
 	{
 		ptr_s[i] = str[i];
 	}
