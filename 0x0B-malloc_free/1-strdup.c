@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	int i, n;
+	int i, length;
 	char *ptr_s;
 
 	if (str == NULL)
@@ -18,14 +18,18 @@ char *_strdup(char *str)
 		return (NULL); /* no argument supplied */
 	}
 
-	n = strlen(str); /* counter in loop */
-	ptr_s = malloc((n - 1) * sizeof(char));
+	length = 0; /* counter in loop */
+	while (str[length] != '\0')
+	{
+		length++;
+	}
+	ptr_s = (char *)malloc((length + 1) * sizeof(char));
 
 	if (ptr_s == NULL)
 	{
 		return (NULL); /* Error allocating memory*/
 	}
-	for (i = 0; i <= n; i++)
+	for (i = 0; i <= length; i++)
 	{
 		ptr_s[i] = str[i];
 	}
