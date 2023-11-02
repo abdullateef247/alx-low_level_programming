@@ -49,7 +49,6 @@ int main(int argc, char *argv[])
 			number = atoi(argv[i]);
 			if (number > 0 && sum > INT_MAX - number) /* Check for integer overflow */
 			{
-				printf("error overflow\n");
 				printf("Error\n");
 				return (1);
 			}
@@ -57,7 +56,6 @@ int main(int argc, char *argv[])
 		}
 		else
 		{
-			printf("error not valid digit\n");
 			printf("Error\n");
 			return (1);
 		}
