@@ -39,10 +39,7 @@ void print_all(const char * const format, ...)
 				{
 					printf("nil");
 				}
-				else
-				{
-					printf("%s", s_args);
-				}
+				printf("%s", s_args);
 				break;
 			default:
 				break;
